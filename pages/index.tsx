@@ -17,7 +17,7 @@ export default function Index(prop: lanyardprops) {
     <div className="text-white antialiased bg-ThemeDark">
       <Head>
         <title>jaylen.lol | Main Page</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`https://cdn.discordapp.com/avatars/${lanyard?.discord_user.id}/${lanyard?.discord_user.avatar}`} />
       </Head>
 
       <main>
@@ -52,7 +52,7 @@ export default function Index(prop: lanyardprops) {
         </nav>
 
         <div className="bg-transparent max-w-4xl mx-auto mb-6 rounded-lg px-28 py-3 text-left">
-          <h1 className="text-6xl font-extrabold py-2 mb-2">Jaylen...</h1>
+          <h1 className="text-6xl font-extrabold py-2 mb-2">Jaylen</h1>
           <span className="text-lg font-semibold w-auto">
             <div className="mb-4">
               Hey there, I'm{" "}
