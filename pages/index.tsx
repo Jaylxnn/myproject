@@ -1,86 +1,107 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
+import type { Data as LanyardData } from "use-lanyard";
+import { useLanyard } from "use-lanyard";
+const DISCORD_ID = "363571068012593156";
 
-const Home: NextPage = () => {
+type lanyardprops = {
+  lanyard: LanyardData;
+};
+
+export default function Index(prop: lanyardprops) {
+  const { data: lanyard } = useLanyard(DISCORD_ID, {
+    initialData: prop.lanyard,
+  });
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="text-white antialiased bg-ThemeDark">
       <Head>
-        <title>Create Next App</title>
+        <title>jaylen.lol | Main Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <main>
+        <nav className="relative container mx-auto p-6">
+          <div className="flex items-center justify-between">
+            <div className="pt-2 flex items-center justify-between hover:animate-pulse">
+              <img
+                className="h-12 w-12 rounded-full"
+                src={`https://cdn.discordapp.com/avatars/${lanyard?.discord_user.id}/${lanyard?.discord_user.avatar}`}
+                alt="picture of me :)"
+              />
+              <h1 className="ml-2.5 font-mono text-xl">
+                {lanyard?.discord_user.username}
+              </h1>
+            </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+            <div className="hidden md:flex space-x-3.5">
+              <a
+                href="/"
+                className="p-3 px-6 pt-2 font-extrabold bg-Blurple rounded-full shadow-md baseline hover:animate-pulse"
+              >
+                /
+              </a>
+              <a
+                href="/friends"
+                className="p-3 px-6 pt-2 font-extrabold bg-Blurple rounded-full shadow-md baseline hover:animate-pulse"
+              >
+                /friends
+              </a>
+            </div>
+          </div>
+        </nav>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="bg-transparent max-w-4xl mx-auto mb-6 rounded-lg px-28 py-3 text-left">
+          <h1 className="text-6xl font-extrabold py-2 mb-2">Jaylen...</h1>
+          <span className="text-lg font-semibold w-auto">
+            <div className="mb-4">
+              Hey there, I'm{" "}
+              <span className="font-extrabold text-Blurple">
+                {lanyard?.discord_user.username}
+              </span>
+              <span className="text-sm font-extrabold"> [cis male]</span>.
+              Currently living at{" "}
+              <span className="font-extrabold text-[#ADD8E6]">
+                {lanyard?.kv.location}
+              </span>
+              . I'm an aspiring Software Developer and currently learning/coding{" "}
+              <span className="font-extrabold">
+                <span className="text-[#4B8BBE]">Pyt</span>
+                <span className="text-[#FFD43B]">hon</span>
+              </span>
+              , <span className="font-extrabold text-[#e34c26]">HTML</span>,{" "}
+              <span className="font-extrabold text-[#F0DB4F]">Javascript</span>,{" "}
+              <span className="font-extrabold text-[#ADD8E6]">C & C++</span> &
+              more! On my free time I usually do work or try to learn coding
+              languages. I'm still rusty at coding but I'm trying my best to
+              understand everything.
+            </div>
+            <h1 className="text-xl font-extrabold py-2 mb-1">
+              You might be asking why I made this?
+            </h1>
+            <span className="text-lg font-semibold w-auto">
+              Yeah, you might be in confusion asking why I did this for no
+              reason. Honestly, wanted to try making something cool and
+              redesigning every once in awhile so I become good with this. So
+              every once and awhile, this website will update & it'll be
+              different throughout the process.
+            </span>
+            <hr className="mt-8 mb-6 border-gray-400 dark:border-gray-500" />
+            <h1 className="text-3xl font-extrabold pb-2 mb-2">
+              Discord Status
+            </h1>
+            <img
+              className="mx-auto shadow-xl"
+              src="https://lanyard.cnrad.dev/api/363571068012593156?hideDiscrim=true&idleMessage=I'm%20most%20likely%20sleeping%20or%20doing%20nothing"
+            />
+          </span>
         </div>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
+      <footer className="bg-[#16171b] font-semibold text-center shadow-xl text-white">
+        <div className="mt-10 py-4">
+          <span className="text-2xl">made with tailwindcss, nextjs & ❤️</span>
+        </div>
       </footer>
     </div>
-  )
+  );
 }
-
-export default Home

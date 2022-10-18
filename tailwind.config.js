@@ -13,7 +13,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        Theme: "#251A1A",
         Blurple: "#5865F2",
         BlurpleDark: "#282e75",
         ThemeDark: "#2a2b2e",
