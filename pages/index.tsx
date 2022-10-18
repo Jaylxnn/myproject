@@ -16,11 +16,7 @@ export default function Index(prop: lanyardprops) {
   return (
     <div className="text-white antialiased bg-ThemeDark">
       <Head>
-        <title>jaylen.lol | Main Page</title>
-        <link
-          rel="icon"
-          href={`https://cdn.discordapp.com/avatars/${lanyard?.discord_user.id}/${lanyard?.discord_user.avatar}`}
-        />
+        <title>jaylen.lol</title>
       </Head>
 
       <main>
