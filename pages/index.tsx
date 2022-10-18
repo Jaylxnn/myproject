@@ -39,7 +39,7 @@ export default function Index(prop: lanyardprops) {
           </div>
         </nav>
 
-        <div className="bg-transparent max-w-4xl mx-auto mb-6 rounded-lg px-28 py-3 text-left">
+        <div className="bg-transparent max-w-4xl mx-auto my-auto rounded-lg px-28 py-3 text-left">
           <h1 className="text-6xl font-extrabold py-2 mb-2">Jaylen</h1>
           <span className="text-lg font-semibold w-auto">
             <div className="mb-4">
@@ -64,15 +64,24 @@ export default function Index(prop: lanyardprops) {
               languages. I'm still rusty at coding but I'm trying my best to
               understand everything.
             </div>
-            <h1 className="text-xl font-extrabold py-2 mb-1">
+            <h1 className="text-xl font-extrabold py-2 mb-2">
               You might be asking why I made this?
             </h1>
+            <div className="mb-4">
+              <span className="text-lg font-semibold w-auto">
+                Yeah, you might be in confusion asking why I did this for no
+                reason. Honestly, wanted to try making something cool and
+                redesigning every once in awhile so I become good with this. So
+                every once and awhile, this website will update & it'll be
+                different throughout the process. I also wanted to do this for
+                the fun of it so like why not!
+              </span>
+            </div>
+            <h1 className="text-xl font-extrabold py-2 mb-1">Side Note</h1>
             <span className="text-lg font-semibold w-auto">
-              Yeah, you might be in confusion asking why I did this for no
-              reason. Honestly, wanted to try making something cool and
-              redesigning every once in awhile so I become good with this. So
-              every once and awhile, this website will update & it'll be
-              different throughout the process.
+              I like Sanrio characters (Pompompurin mostly) & many music by
+              people like Clario, Cigarettes After Sex, Mitski, Omori, Lana Del
+              Rey & Nicki Minaj.
             </span>
             <hr className="mt-8 mb-6 border-gray-400 dark:border-gray-500" />
             <h1 className="text-3xl font-extrabold pb-2 mb-2 text-center">
@@ -84,11 +93,6 @@ export default function Index(prop: lanyardprops) {
             />
           </span>
         </div>
-        <footer className="bg-[#16171b] font-semibold text-center shadow-xl text-white">
-          <div className="mt-10 py-4">
-            <span className="text-2xl">made with tailwindcss, nextjs & ❤️</span>
-          </div>
-        </footer>
       </main>
     </div>
   );
