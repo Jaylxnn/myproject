@@ -17,7 +17,10 @@ export default function Index(prop: lanyardprops) {
     <div className="text-white antialiased bg-ThemeDark">
       <Head>
         <title>jaylen.lol | Main Page</title>
-        <link rel="icon" href={`https://cdn.discordapp.com/avatars/${lanyard?.discord_user.id}/${lanyard?.discord_user.avatar}`} />
+        <link
+          rel="icon"
+          href={`https://cdn.discordapp.com/avatars/${lanyard?.discord_user.id}/${lanyard?.discord_user.avatar}`}
+        />
       </Head>
 
       <main>
@@ -72,7 +75,7 @@ export default function Index(prop: lanyardprops) {
               different throughout the process.
             </span>
             <hr className="mt-8 mb-6 border-gray-400 dark:border-gray-500" />
-            <h1 className="text-3xl font-extrabold pb-2 mb-2">
+            <h1 className="text-3xl font-extrabold pb-2 mb-2 text-center">
               Discord Status
             </h1>
             <img
@@ -81,12 +84,12 @@ export default function Index(prop: lanyardprops) {
             />
           </span>
         </div>
+        <footer className="bg-[#16171b] font-semibold text-center shadow-xl text-white">
+          <div className="mt-10 py-4">
+            <span className="text-2xl">made with tailwindcss, nextjs & ❤️</span>
+          </div>
+        </footer>
       </main>
-      <footer className="bg-[#16171b] font-semibold text-center shadow-xl text-white">
-        <div className="mt-10 py-4">
-          <span className="text-2xl">made with tailwindcss, nextjs & ❤️</span>
-        </div>
-      </footer>
     </div>
   );
 }
