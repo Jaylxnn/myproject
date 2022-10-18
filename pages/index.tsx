@@ -33,21 +33,6 @@ export default function Index(prop: lanyardprops) {
                 {lanyard?.discord_user.username}
               </h1>
             </div>
-
-            <div className="hidden md:flex space-x-3.5">
-              <a
-                href="/"
-                className="p-3 px-6 pt-2 font-extrabold bg-Blurple rounded-full shadow-md baseline hover:animate-pulse"
-              >
-                /
-              </a>
-              <a
-                href="/friends"
-                className="p-3 px-6 pt-2 font-extrabold bg-Blurple rounded-full shadow-md baseline hover:animate-pulse"
-              >
-                /friends
-              </a>
-            </div>
           </div>
         </nav>
 
