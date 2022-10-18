@@ -5,7 +5,22 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    extend: {
+      colors: {
+        Theme: "#251A1A",
+        Blurple: "#5865F2",
+        BlurpleDark: "#282e75",
+        ThemeDark: "#2a2b2e",
+        MainColor: "#36393e",
+        WhiteColor: "#FFFFFF",
+      },
+    },
   },
   plugins: [],
 }
