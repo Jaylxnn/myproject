@@ -13,7 +13,7 @@ export function SpotifySong() {
       target="_blank"
       rel="noreferrer"
       href={`https://open.spotify.com/track/${lanyard.spotify.track_id}`}
-      className="bg-neutral-900 flex inline-flex items-center mt-2 ml-2 pt-1 pb-2 pl-2 pr-2 rounded-lg"
+      className="bg-neutral-900 inline-flex items-center mt-2 md:ml-2 pt-1 pb-2 pl-2 pr-2 rounded-lg"
     >
       <div>
         <img
