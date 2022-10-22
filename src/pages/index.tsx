@@ -62,7 +62,10 @@ export default function Index(prop: lanyardprops) {
                 <ul>
                   <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl ">
                     <span id="username">{lanyard?.discord_user.username}</span>
-                    <span id="discriminator" className="text-base font-medium md:text-xl">
+                    <span
+                      id="discriminator"
+                      className="text-base font-medium md:text-xl"
+                    >
                       #{lanyard?.discord_user.discriminator}
                     </span>
                     <span
@@ -70,8 +73,7 @@ export default function Index(prop: lanyardprops) {
                       className={`${
                         lanyard ? statusMap[lanyard?.discord_status] : null
                       } ml-2 inline-block rounded-full h-4 w-4 md:h-8 md:w-8`}
-                    >
-                    </span>
+                    ></span>
                   </span>
                   <SpotifySong />
                 </ul>
@@ -157,6 +159,7 @@ export default function Index(prop: lanyardprops) {
                   <ListItem icon={SiSega} text="SEGA" />
                 </ul>
               </div>
+              <div className="space-x-14"></div>
             </main>
           </div>
         </div>
