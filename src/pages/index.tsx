@@ -3,7 +3,7 @@ import Head from "next/head";
 import type { Data as LanyardData } from "use-lanyard";
 import { useLanyard, type Data } from "use-lanyard";
 import { ListItem } from "../components/Items";
-import { SpotifySong } from "../components/UseSpotify";
+import { SpotifySong } from "../components/Intergration";
 import {
   SiSpotify,
   SiAtom,
@@ -29,6 +29,7 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiSega,
+  SiTypescript
 } from "react-icons/si";
 
 const DISCORD_ID = "363571068012593156";
@@ -43,7 +44,7 @@ type lanyardprops = {
   lanyard: LanyardData;
 };
 
-export default function Index(prop: lanyardprops) {
+export default function Home(prop: lanyardprops): JSX.Element {
   const { data: lanyard } = useLanyard(DISCORD_ID, {
     initialData: prop.lanyard,
   });
@@ -51,7 +52,7 @@ export default function Index(prop: lanyardprops) {
   return (
     <div className="dark:text-white antialiased bg-ThemeDark bg-cover">
       <Head>
-        <title>Jaylen R | Website</title>
+        <title>jaylen.lol</title>
       </Head>
 
       <main>
@@ -157,9 +158,9 @@ export default function Index(prop: lanyardprops) {
                   <ListItem icon={SiTailwindcss} text="TailwindCSS" />
                   <ListItem icon={SiNextdotjs} text="Next.js" />
                   <ListItem icon={SiSega} text="SEGA" />
+                  <ListItem icon={SiTypescript} text="TypeScript" />
                 </ul>
               </div>
-              <div className="space-x-14"></div>
             </main>
           </div>
         </div>

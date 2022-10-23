@@ -14,7 +14,7 @@ export default class AlistairDocument extends Document {
 					<meta name="theme-color" content="#ffffff" />
 					<meta
 						name="description"
-						content="jaylen.lol website, welcome!"
+						content="jaylen.lol"
 					/>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
