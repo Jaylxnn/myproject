@@ -5,10 +5,7 @@ export const DISCORD_ID = "363571068012593156";
 
 export const SpotifySong = (): JSX.Element | null => {
   const { data: lanyard } = useLanyard(DISCORD_ID);
-
-  if (!lanyard || !lanyard.spotify) {
-    return null;
-  }
+  if (!lanyard || !lanyard.spotify) return null;
 
   return (
     <div className="bg-neutral-900 inline-flex items-center mt-2 md:mt-0 md:ml-2 pt-2 pb-2 pl-2 pr-2 rounded-lg">

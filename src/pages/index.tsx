@@ -29,15 +29,15 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiSega,
-  SiTypescript
+  SiTypescript,
 } from "react-icons/si";
 
 const DISCORD_ID = "363571068012593156";
 const statusMap: Record<Data["discord_status"], string> = {
-  online: "bg-green-500",
-  idle: "bg-yellow-500",
-  dnd: "bg-red-500",
-  offline: "bg-neutral-500",
+  online: "https://cdn3.emoji.gg/emojis/8312-online.png",
+  idle: "https://cdn3.emoji.gg/emojis/9231-idle.png",
+  dnd: "https://cdn3.emoji.gg/emojis/8310-dnd.png",
+  offline: "https://cdn3.emoji.gg/emojis/8997_offline.png",
 };
 
 type lanyardprops = {
@@ -50,13 +50,35 @@ export default function Home(prop: lanyardprops): JSX.Element {
   });
 
   return (
-    <div className="dark:text-white antialiased bg-ThemeDark bg-cover">
+    <div className="dark:text-white antialiased bg-ThemeDark bg-auto">
       <Head>
         <title>jaylen.lol</title>
       </Head>
 
       <main>
         <div className="mx-auto max-w-4xl py-10 px-5">
+          <div className="hidden items-center space-x-2 sm:flex">
+            <nav className="flex-1">
+              <ul className="flex space-x-4">
+                <li className="shrink-0">
+                  <a
+                    className="block py-3 font-black text-lg dark:hover:text-white no-underline dark:sm:hover:bg-white/10 rounded-md sm:inline-block sm:px-5 sm:text-sm sm:font-normal sm:bg-white/0 sm:hover:bg-neutral-900/5 sm:rounded-full"
+                    href="/"
+                  >
+                    main
+                  </a>
+                </li>
+                <li className="shrink-0">
+                  <a
+                    className="block py-3 font-black text-lg dark:hover:text-white no-underline dark:sm:hover:bg-white/10 rounded-md sm:inline-block sm:px-5 sm:text-sm sm:font-normal sm:bg-white/0 sm:hover:bg-neutral-900/5 sm:rounded-full"
+                    href="/friends"
+                  >
+                    friends
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div>
             <main className="mx-auto max-w-3xl space-y-4 md:py-24">
               <div className="space-y-4">
@@ -69,20 +91,20 @@ export default function Home(prop: lanyardprops): JSX.Element {
                     >
                       #{lanyard?.discord_user.discriminator}
                     </span>
-                    <span
-                      id="status"
-                      className={`${
-                        lanyard ? statusMap[lanyard?.discord_status] : null
-                      } ml-2 inline-block rounded-full h-4 w-4 md:h-8 md:w-8`}
-                    ></span>
+                    <img
+                      alt="status"
+                      src={`${
+                        lanyard ? statusMap[lanyard.discord_status] : null
+                      }`}
+                      className="ml-2 inline-block rounded-full h-4 w-4 md:h-8 md:w-8 font-light text-xs"
+                    />
                   </span>
+
                   <SpotifySong />
                 </ul>
                 <p className="opacity-90">
                   Hey there, I'm{" "}
-                  <span className="font-extrabold text-Blurple">
-                    {lanyard?.discord_user.username}
-                  </span>
+                  <span className="font-extrabold text-Blurple">Jaylen</span>
                   <span className="text-sm font-extrabold"> [cis male]</span>.
                   Currently living at{" "}
                   <span className="font-extrabold text-[#ADD8E6]">
