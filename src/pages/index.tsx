@@ -57,28 +57,6 @@ export default function Home(prop: lanyardprops): JSX.Element {
 
       <main>
         <div className="mx-auto max-w-4xl py-10 px-5">
-          <div className="hidden items-center space-x-2 sm:flex">
-            <nav className="flex-1">
-              <ul className="flex space-x-4">
-                <li className="shrink-0">
-                  <a
-                    className="block py-3 font-black text-lg dark:hover:text-white no-underline dark:sm:hover:bg-white/10 rounded-md sm:inline-block sm:px-5 sm:text-sm sm:font-normal sm:bg-white/0 sm:hover:bg-neutral-900/5 sm:rounded-full"
-                    href="/"
-                  >
-                    main
-                  </a>
-                </li>
-                <li className="shrink-0">
-                  <a
-                    className="block py-3 font-black text-lg dark:hover:text-white no-underline dark:sm:hover:bg-white/10 rounded-md sm:inline-block sm:px-5 sm:text-sm sm:font-normal sm:bg-white/0 sm:hover:bg-neutral-900/5 sm:rounded-full"
-                    href="/friends"
-                  >
-                    friends
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
           <div>
             <main className="mx-auto max-w-3xl space-y-4 md:py-24">
               <div className="space-y-4">
