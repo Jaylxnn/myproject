@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import type { Data as LanyardData } from "use-lanyard";
 import { useLanyard, type Data } from "use-lanyard";
@@ -55,7 +54,7 @@ export default function Home(prop: lanyardprops): JSX.Element {
         <title>jaylen.lol</title>
       </Head>
 
-      <main>
+      <main className="bg-ThemeDark antialiased dark:text-white">
         <div>
           <main className="mx-auto max-w-3xl space-y-4 md:py-24">
             <div className="space-y-4">

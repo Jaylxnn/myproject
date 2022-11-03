@@ -7,6 +7,7 @@
 package-lock.json
 forlater.txt
 main1.txt
+.env
 
 # testing
 /coverage
