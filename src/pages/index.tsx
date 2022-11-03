@@ -1,3 +1,4 @@
+import type { NextPage } from "next";
 import Head from "next/head";
 import type { Data as LanyardData } from "use-lanyard";
 import { useLanyard, type Data } from "use-lanyard";
