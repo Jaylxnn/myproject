@@ -14,10 +14,10 @@ export default function Home(): JSX.Element {
             <div className="space-y-4">
               <ul>
                 <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl ">
-                  page testing
+                  Nothing here yet. Go back to the beginning.
                 </span>
               </ul>
-              <p className="opacity-90">page example</p>
+              <p className="opacity-90">What're you doing still here? Leave this page! How'd you even get here in the first place?</p>
             </div>
           </main>
         </div>

@@ -14,7 +14,7 @@ export default class AlistairDocument extends Document {
 					<meta name="theme-color" content="#ffffff" />
 					<meta
 						name="description"
-						content="jaylen.lol"
+						content="welcome to my website! :^)"
 					/>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,7 +23,7 @@ export default class AlistairDocument extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
-				<body>
+				<body className="dark:text-white antialiased bg-ThemeDark bg-auto">
 					<Main />
 					<NextScript />
 					<script async src="/theme.js" />

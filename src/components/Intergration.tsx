@@ -1,4 +1,3 @@
-import { Spotify } from "./Items";
 import { useLanyard } from "use-lanyard";
 import { SiSpotify } from "react-icons/si";
 export const DISCORD_ID = "363571068012593156";
@@ -15,10 +14,15 @@ export const SpotifySong = (): JSX.Element | null => {
         className="rounded-tl-md rounded-bl-md h-auto w-[80px]"
       />
       <div className="m-2">
-        <span className="text-[#1ed760] font-semibold text-sm">
-          <Spotify icon={SiSpotify} text="Listening to..." />
-        </span>
-        <h1 className="text-ellipsis overflow-hidden text-sm font-bold opacity-90">{lanyard.spotify.song}</h1>
+        <li className="flex items-center space-x-1 text-[#1ed760] font-semibold text-sm">
+          <span>
+            <SiSpotify className="h-4 w-4" />
+          </span>
+          <span>Listening to...</span>
+        </li>
+        <h1 className="text-ellipsis overflow-hidden text-sm font-bold opacity-90">
+          {lanyard.spotify.song}
+        </h1>
         <span className="opacity-80 text-base">{lanyard.spotify.artist}</span>
       </div>
     </div>
