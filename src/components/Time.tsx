@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { dayjs } from '../util/dayjs';
 
 const now = () => dayjs().tz()
@@ -29,9 +28,6 @@ const Time = () => {
 
   return (
     <p>
-      <FontAwesomeIcon
-        icon={date.isBetween(beforeTime, afterTime) ? ['far', 'snooze'] : ['far', 'clock']}
-      />
       {date.format('Do MMMM YYYY • h:mm:ss A')}{' '}
       {currentEvent && (
         <span className="font-bold">
