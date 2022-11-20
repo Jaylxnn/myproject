@@ -1,6 +1,6 @@
 import Document, {Head, Html, Main, NextScript} from 'next/document';
 
-export default class AlistairDocument extends Document {
+export default class ADocument extends Document {
 	render() {
 		return (
 			<Html lang="en">
@@ -23,7 +23,7 @@ export default class AlistairDocument extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
-				<body className="dark:text-white antialiased bg-ThemeDark bg-auto">
+				<body className="dark:text-white antialiased dark:bg-ThemeDark bg-cover bg-center">
 					<Main />
 					<NextScript />
 					<script async src="/theme.js" />

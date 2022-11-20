@@ -2,7 +2,7 @@ import { useLanyard } from "use-lanyard";
 import { SiSpotify } from "react-icons/si";
 export const DISCORD_ID = "363571068012593156";
 
-export const SpotifySong = (): JSX.Element | null => {
+const SpotifySong = () => {
   const { data: lanyard } = useLanyard(DISCORD_ID);
   if (!lanyard || !lanyard.spotify) return null;
 
@@ -28,3 +28,6 @@ export const SpotifySong = (): JSX.Element | null => {
     </div>
   );
 };
+
+
+export default SpotifySong

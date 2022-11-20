@@ -11,10 +11,7 @@ module.exports = {
     extend: {
       colors: {
         Blurple: "#5865F2",
-        BlurpleDark: "#282e75",
-        ThemeDark: "#2a2b2e",
-        MainColor: "#36393e",
-        WhiteColor: "#FFFFFF",
+        ThemeDark: "#111212",
       },
     },
   },

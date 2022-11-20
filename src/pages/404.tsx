@@ -14,10 +14,10 @@ export default function Home(): JSX.Element {
             <div className="space-y-4">
               <ul>
                 <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl ">
-                  ...
+                  404
                 </span>
               </ul>
-              <p className="opacity-90">So... this page is going to be changed (maybe) & I haven't finished the front page. I'll finish the first page then will go on to the next! 🤞</p>
+              <p className="opacity-90">This page does not exist... going into the unknown...?</p>
             </div>
           </main>
         </div>
