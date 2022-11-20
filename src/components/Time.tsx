@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { dayjs } from '../util/dayjs';
 
 const now = () => dayjs().tz()
-
 const events = {
   christmas: [25, 12],
   newYear: [1, 1],
@@ -11,9 +10,6 @@ const events = {
 }
 
 const format = 'hhA'
-const beforeTime = dayjs('12AM', format).tz()
-const afterTime = dayjs('8AM', format).tz()
-
 const Time = () => {
   const [date, setDate] = useState(now())
 
