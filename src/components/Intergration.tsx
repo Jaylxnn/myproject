@@ -1,3 +1,4 @@
+
 import { useLanyard } from "use-lanyard";
 import { SiSpotify } from "react-icons/si";
 export const DISCORD_ID = "363571068012593156";

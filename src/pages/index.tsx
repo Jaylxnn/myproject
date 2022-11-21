@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import type { Data as LanyardData } from "use-lanyard";
 import { useLanyard, type Data } from "use-lanyard";
 import { ListItem } from "../components/Items";
+import SpotifySong from "../components/Intergration";
 import {
   SiSpotify,
   SiAtom,
@@ -31,16 +31,13 @@ import {
   SiSega,
   SiTypescript,
 } from "react-icons/si";
-const SpotifySong = dynamic(() => import("../components/Intergration"), {
-  ssr: true,
-});
 
 const DISCORD_ID = "363571068012593156";
-const statusMap: Record<Data['discord_status'], string> = {
-	online: 'ring-green-500',
-	idle: 'ring-yellow-500',
-	dnd: 'ring-red-500',
-	offline: 'ring-neutral-500',
+const statusMap: Record<Data["discord_status"], string> = {
+  online: "ring-green-500",
+  idle: "ring-yellow-500",
+  dnd: "ring-red-500",
+  offline: "ring-neutral-500",
 };
 
 type lanyardprops = {
@@ -73,7 +70,11 @@ export default function Home(prop: lanyardprops): JSX.Element {
                 <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl">
                   <span id="username">
                     {" "}
-                    <div className={`h-8 w-8 mr-2 ring-[5px] md:h-12 md:w-12 md:ring-[6px] ${lanyard ? statusMap[lanyard.discord_status] : null} rounded-full inline-block`}>
+                    <div
+                      className={`h-8 w-8 mr-2 ring-[5px] md:h-12 md:w-12 md:ring-[6px] ${
+                        lanyard ? statusMap[lanyard.discord_status] : null
+                      } rounded-full inline-block`}
+                    >
                       <div className="h-8 w-8 md:h-12 md:w-12 rounded-full select-none text-white ring-[3px] ring-ThemeDark">
                         <img
                           className="h-8 w-8 md:h-12 md:w-12 rounded-full"

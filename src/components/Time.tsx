@@ -9,7 +9,6 @@ const events = {
   birthday: [12, 12],
 }
 
-const format = 'hhA'
 const Time = () => {
   const [date, setDate] = useState(now())
 
@@ -23,7 +22,7 @@ const Time = () => {
   }, [])
 
   return (
-    <p>
+    <p className="hidden md:block">
       {date.format('Do MMMM YYYY • h:mm:ss A')}{' '}
       {currentEvent && (
         <span className="font-bold">
@@ -33,7 +32,7 @@ const Time = () => {
               christmas: 'Merry Christmas!',
               newYear: 'Happy New Year!',
               earthDay: 'Happy Earth Day!',
-              birthday: 'Happy Birthday to me!',
+              birthday: 'My birthday!',
             }[currentEvent]
           }
         </span>
