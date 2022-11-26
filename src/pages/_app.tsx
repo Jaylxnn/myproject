@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import dynamic from "next/dynamic";
 import { AppProps } from "next/app";
+import { ThemeSwitcher } from "../components/ToggleTheme";
 const Time = dynamic(() => import("../components/Time"), {
   ssr: false,
 });

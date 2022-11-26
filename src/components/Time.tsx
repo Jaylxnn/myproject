@@ -7,7 +7,7 @@ const events = {
   newYear: [1, 1],
   earthDay: [22, 4],
   birthday: [12, 12],
-  thanksgiving: [24, 11]
+  thanksgiving: [24, 11],
 }
 
 const Time = () => {
@@ -24,7 +24,7 @@ const Time = () => {
 
   return (
     <p className="hidden md:block">
-      {date.format('Do MMMM YYYY • h:mm:ss A')}{' '}
+      {date.format('MMMM Do, YYYY • h:mm:ss A')}{' '}
       {currentEvent && (
         <span className="font-bold">
           —{' '}
