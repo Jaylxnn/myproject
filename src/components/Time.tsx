@@ -8,7 +8,6 @@ const events = {
   earthDay: [22, 4],
   birthday: [12, 12],
   thanksgiving: [24, 11],
-  
 }
 
 const Time = () => {
