@@ -59,13 +59,6 @@ export default function Home(prop: lanyardprops): JSX.Element {
         <div>
           <main className="mx-auto max-w-3xl space-y-4 md:py-24">
             <div className="space-y-2">
-              <img
-                className="block rounded-xl shadow-xl mb-4 shadow-neutral-300 dark:shadow-none"
-                src="https://cdn.jaylen.lol/r/opera_3myin0G3e1.gif"
-                alt="a nice image outside..."
-                height={"400"}
-                width={"1000"}
-              />
               <ul>
                 <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl">
                   <span id="username">
