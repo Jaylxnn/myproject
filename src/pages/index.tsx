@@ -59,7 +59,7 @@ export default function Home(prop: lanyardprops): JSX.Element {
         <div>
           <main className="mx-auto max-w-3xl space-y-4 md:py-24">
             <div className="space-y-2">
-              <img
+                            <img
                 className="block rounded-xl shadow-xl mb-4 shadow-neutral-300 dark:shadow-none"
                 src="https://cdn.jaylen.lol/r/opera_3myin0G3e1.gif"
                 alt="a nice image outside..."
