@@ -33,7 +33,7 @@ const Time = () => {
               christmas: 'Merry Christmas!',
               newYear: 'Happy New Year!',
               earthDay: 'Happy Earth Day!',
-              birthday: 'My birthday!',
+              birthday: 'It\'s my birthday!',
             }[currentEvent]
           }
         </span>

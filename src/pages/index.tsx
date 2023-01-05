@@ -131,6 +131,20 @@ export default function Home(prop: lanyardprops): JSX.Element {
               </p>
             </div>
             <div className="space-y-4">
+              <h1 className="text-center text-2xl font-extrabold sm:text-3xl">
+                main people i enjoy talking too
+              </h1>
+              <p className="opacity-90 text-center">
+                ❤️ oswald, pablo, alissa, klee, skyla, rhia, destinee, soli,
+                ryeli, bup ❤️
+              </p>
+              <p className="opacity-70 text-center">
+                i enjoy talking to all of you guys. even if we become distant, i
+                will always have you here no matter what. and thats a promise i
+                will keep. love u
+              </p>
+            </div>
+            <div className="space-y-4">
               <h1 className="text-2xl font-extrabold sm:text-3xl">
                 Applications
               </h1>
