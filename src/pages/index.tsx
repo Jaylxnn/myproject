@@ -134,8 +134,8 @@ export default function Home(prop: lanyardprops): JSX.Element {
               <h1 className="text-center text-2xl font-extrabold sm:text-3xl">
                 main people i enjoy talking too
               </h1>
-              <p className="opacity-90 text-center text-[#ff2929a9]">
-                ❤️ oswald, pablo, alissa, klee, skyla, rhia, destinee, soli,
+              <p className="opacity-90 text-center text-[#792813]">
+                ❤️ oswald, pablo, casper, sleepnt (a faggot), ethan, alissa, klee, skyla, rhia, destinee, soli,
                 ryeli, bup ❤️
               </p>
               <p className="opacity-70 text-center">
