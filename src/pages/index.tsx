@@ -135,7 +135,8 @@ export default function Home(prop: lanyardprops): JSX.Element {
                 main people i enjoy talking too
               </h1>
               <p className="opacity-90 text-center text-[#ff2929a9]">
-                ❤️ oswald, pablo, casper, sleepnt, ethan, alissa, klee, skyla, rhia, destinee, soli, ryeli, zinno, beiry, bup ❤️
+                ❤️ oswald, pablo, alissa, klee, skyla, rhia, destinee, soli,
+                ryeli, bup ❤️
               </p>
               <p className="opacity-70 text-center">
                 i enjoy talking to all of you guys. even if we become distant, i
