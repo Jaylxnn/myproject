@@ -69,7 +69,6 @@ export default function Home(prop: lanyardprops): JSX.Element {
               <ul>
                 <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl">
                   <span id="username">
-                    | dallas
                     {" "}
                     <div
                       className={`h-8 w-8 mr-2 ring-[5px] md:h-12 md:w-12 md:ring-[6px] ${
@@ -136,7 +135,7 @@ export default function Home(prop: lanyardprops): JSX.Element {
                 main people i enjoy talking too
               </h1>
               <p className="opacity-90 text-center text-[#ff2929a9]">
-                ❤️ oswald, pablo, casper, sleepnt, ethan, alissa, klee, skyla, destinee, zinno, beiry, soli, ryeli, bup ❤️
+                ❤️ dallas, oswald, pablo, casper, sleepnt, ethan, alissa, klee, skyla, destinee, zinno, beiry, soli, ryeli, bup ❤️
               </p>
               <p className="opacity-70 text-center">
                 i enjoy talking to all of you guys. even if we become distant, i
