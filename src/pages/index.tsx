@@ -69,6 +69,7 @@ export default function Home(prop: lanyardprops): JSX.Element {
               <ul>
                 <span className="text-3xl font-extrabold sm:text-4xl md:text-6xl">
                   <span id="username">
+                    | dallas
                     {" "}
                     <div
                       className={`h-8 w-8 mr-2 ring-[5px] md:h-12 md:w-12 md:ring-[6px] ${
